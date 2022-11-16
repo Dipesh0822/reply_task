@@ -224,29 +224,28 @@
     ```* The is represents the existing page number.```
 
 
-##### Reply API
+##### File API
 
 1. <span style="color:blue">Insert</span>
-    - http://localhost:8001/api/v1/replies
+    - http://localhost:8001/api/v1/files
     - POST
     - 
        ```
-        {
-            "group" : "this task is very often",
-            "subgroup" : 1,
-            "user_id" : 1,
-            "file_id" : 1
-        }
+        "group" : "test",
+        "subgroup" : "test",
+        "filename" : "test.jpg",
+        "file" : "file upload name"
        ```
-    - all field is required.  
+    - all field is required.
+    - THis request is used to form-data.  
 
 2. <span style="color:blue">Get</span>
-    - http://localhost:8001/api/v1/replies/:id *
+    - http://localhost:8001/api/v1/files/:id *
     - GET
     ```* The is represents the existing file id.```
 
 3. <span style="color:blue">Delete</span>
-    - http://localhost:8001/api/v1/replies/:id *
+    - http://localhost:8001/api/v1/files/:id *
     - DELETE
     ```* The is represents the existing file id.```   
 
